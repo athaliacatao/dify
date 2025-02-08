@@ -60,6 +60,8 @@ RUN \
         fonts-noto-cjk \
         # install libmagic to support the use of python-magic guess MIMETYPE
         libmagic1 \
+        # install libreoffice to support the use of convert ppt file to pptx file
+        libreoffice \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
 
