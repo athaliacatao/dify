@@ -25,7 +25,7 @@ export default function FeedBack(props: DeleteAccountProps) {
   const handleSuccess = useCallback(async () => {
     try {
       await logout({
-        url: '/logout',
+        url: `${process.env.NEXT_PUBLIC_BASE_PATH}/logout`,
         params: {},
       })
       localStorage.removeItem('refresh_token')
